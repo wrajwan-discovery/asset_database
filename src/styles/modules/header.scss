@@ -13,6 +13,7 @@ header {
     img {
         height: 100%;
         width: auto;
+        margin-right: 40px;
     }
 }
 
@@ -22,9 +23,19 @@ header {
     padding: 8px;
     font-size: 14px;
     transition: .2s ease-in-out;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
 
     &:focus {
         border: 1px solid rgba($neutral01, 0.9);
         outline: none;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 400px;
     }
 }

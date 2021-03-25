@@ -3,7 +3,7 @@ import $ from "jquery";
 $.getJSON("assets/data/data.json", function(items) {
   for(var item = 0; item < 28; item++) {
       $('#grid').append(
-      "<a class='grid-item' href='" + items[item].posterWithLogoImage + "' download>" +
+      "<a class='grid-item' href='" + items[item].posterWithLogoImage + "' target='_blank' download>" +
             "<img src='" + items[item].posterWithLogoImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
             "<div class='grid-item-meta-wrapper'>" +
               "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
@@ -21,7 +21,7 @@ $(window).scroll(function () {
         $.getJSON("assets/data/data.json", function(items) {
           for(var item = itemPosition; item < itemNext; item++) {
               $('#grid').append(
-                "<a class='grid-item' href='" + items[item].posterWithLogoImage + "' download>" +
+                "<a class='grid-item' href='" + items[item].posterWithLogoImage + "' target='_blank' download>" +
                   "<img src='" + items[item].posterWithLogoImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
                   "<div class='grid-item-meta-wrapper'>" +
                     "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
@@ -43,7 +43,7 @@ $(document).ready(function(){
      if (searchField === "") {
       for(var item = 0; item < 28; item++) {
         $('#grid').append(
-        "<a class='grid-item' href='" + items[item].posterWithLogoImage + "' download>" +
+        "<a class='grid-item' href='" + items[item].posterWithLogoImage + "' target='_blank' download>" +
               "<img src='" + items[item].posterWithLogoImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
               "<div class='grid-item-meta-wrapper'>" +
                 "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
@@ -56,7 +56,7 @@ $(document).ready(function(){
         if (item.displayName.search(expression) != -1)
         {
          $('#grid').append(
-           "<a class='grid-item' href='" + item.posterWithLogoImage + "' download>" +
+           "<a class='grid-item' href='" + item.posterWithLogoImage + "' target='_blank' download>" +
                "<img src='" + item.posterWithLogoImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
                "<div class='grid-item-meta-wrapper'>" +
                  "<div class='grid-item-series-title'>" + item.displayName + "</div>" +

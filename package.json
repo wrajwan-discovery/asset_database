@@ -1,5 +1,5 @@
 {
-  "name": "discovery+_image_database",
+  "name": "discovery_asset_database",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -38,7 +38,6 @@
     "gulp-sourcemaps": "^2.2.0",
     "gulp-watch": "^4.3.10",
     "jquery": "^3.1.1",
-    "jquery-csv": "^1.0.11",
     "lodash": "^4.16.6",
     "node-bourbon": "^4.2.8",
     "path": "^0.12.7",
@@ -47,7 +46,6 @@
     "react-dom": "^15.4.0",
     "require-dir": "^0.3.1",
     "string": "^3.3.3",
-    "video.js": "^7.6.5",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
@@ -55,9 +53,5 @@
   "devDependencies": {
     "gulp-ejs": "^2.3.0",
     "gulp-ext-replace": "^0.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/wrajwan-discovery/DTC_CTV"
   }
 }

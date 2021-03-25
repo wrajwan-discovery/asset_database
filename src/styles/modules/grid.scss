@@ -7,21 +7,40 @@
 }
 
 .grid-item {
-    box-shadow: 0px 0px 5px rgba($neutral01, 0.1);
+    box-shadow: 0px 0px 8px rgba($neutral01, 0.1);
     background: $neutral10;
     transform: scale(1.0001);
-    transition: .125s ease-in-out;
+    transition: .2s ease-in-out;
     position: relative;
     z-index: 1;
+    margin: 10px;
+    width: calc(50% - 20px);
+    border-radius: 3px;
+
+    @media screen and (min-width: $bp-xsmall) {
+        width: calc(33% - 20px);
+    }
+
+    @media screen and (min-width: $bp-small) {
+        width: calc(25% - 20px);
+    }
+
+    @media screen and (min-width: $bp-medium) {
+        width: calc(20% - 20px);
+    }
+
+    @media screen and (min-width: $bp-large) {
+        width: calc(16.66% - 1vw);
+        margin: .5vw;
+    }
+
+    @media screen and (min-width: $bp-xlarge) {
+        width: calc(14.28% - 1vw);
+    }
 
     img {
         width: 100%;
         height: auto;
-    }
-
-    @media screen and (min-width: $bp-large) {
-        width: calc(14.28% - 1vw);
-        margin: .5vw;
     }
 
     &:hover {
