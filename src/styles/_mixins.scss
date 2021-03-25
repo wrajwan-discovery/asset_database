@@ -1,0 +1,102 @@
+@mixin center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin CTV-badge {
+    font-family: 'SFProDisplay-Heavy';
+    font-size: 0.938vw;
+    line-height: 0.938vw;
+    letter-spacing: 0.078vw;
+    text-transform: uppercase;
+}
+
+@mixin CTV-subtitle-small {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 1.042vw;
+    line-height: 1.250vw;
+}
+
+@mixin CTV-subtitle-large {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 1.875vw;
+    line-height: 2.083vw;
+}
+
+@mixin CTV-microcopy {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 1.042vw;
+    line-height: 1.250vw;
+}
+
+@mixin CTV-body-small {
+    font-family: 'SFProDisplay-Semibold';
+    font-size: 1.250vw;
+    line-height: 1.875vw;
+}
+
+@mixin CTV-body-medium {
+    font-family: 'SFProDisplay-Semibold';
+    font-size: 1.250vw;
+    line-height: 1.875vw;
+}
+
+@mixin CTV-body-large {
+    font-family: 'SFProDisplay-Semibold';
+    font-size: 1.458vw;
+    line-height: 1.667vw;
+}
+
+@mixin CTV-title-small {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 1.458vw;
+    line-height: 1.667vw;
+}
+
+@mixin CTV-title-medium {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 2.500vw;
+    line-height: 2.708vw;
+}
+
+@mixin CTV-title-medium2 {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 2.917vw;
+    line-height: 3.125vw;
+    letter-spacing: 0;
+}
+
+@mixin CTV-title-large {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 3.750vw;
+    line-height: 3.958vw;
+}
+
+@mixin CTV-section-small {
+    font-family: 'SFProDisplay-Semibold';
+    font-size: 1.667vw;
+    line-height: 1.875vw;
+}
+
+@mixin CTV-section-large {
+    font-family: 'SFProDisplay-Semibold';
+    font-size: 1.875vw;
+    line-height: 1.875vw;
+}
+
+@mixin CTV-button-large {
+    font-family: 'SFProDisplay-Semibold';
+    font-size: 1.667vw;
+    line-height: 1.667vw;
+    text-transform: capitalize;
+}
+
+@mixin CTV-button-small {
+    font-family: 'SFProDisplay-Heavy';
+    font-size: 0.938vw;
+    line-height: 0.938vw;
+    letter-spacing: 0.078vw;
+    text-transform: capitalize;
+}
+

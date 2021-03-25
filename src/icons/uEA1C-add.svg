@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{mask:url(#mask-2_1_);}
+</style>
+<g id="Concepts">
+	<g id="DTC-Channels-Concept-Player" transform="translate(-85.000000, -945.000000)">
+		<g id="Icon_x2F_Player_x2F_Play" transform="translate(64.000000, 924.000000)">
+			<g id="Mask">
+				<path id="path-1_1_" class="st0" d="M40.8,21.8c0.6,0,1,0.4,1,1v15.4l15.4,0c0.6,0,1,0.4,1,1v1.6c0,0.6-0.4,1-1,1H41.8v15.4
+					c0,0.6-0.4,1-1,1h-1.6c-0.6,0-1-0.4-1-1l0-15.4H22.8c-0.6,0-1-0.4-1-1v-1.6c0-0.6,0.4-1,1-1l15.4,0l0-15.4c0-0.6,0.4-1,1-1H40.8
+					z"/>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" id="mask-2_1_">
+				<g class="st1">
+					<path id="path-1_2_" class="st2" d="M40.8,21.8c0.6,0,1,0.4,1,1v15.4l15.4,0c0.6,0,1,0.4,1,1v1.6c0,0.6-0.4,1-1,1H41.8v15.4
+						c0,0.6-0.4,1-1,1h-1.6c-0.6,0-1-0.4-1-1l0-15.4H22.8c-0.6,0-1-0.4-1-1v-1.6c0-0.6,0.4-1,1-1l15.4,0l0-15.4c0-0.6,0.4-1,1-1
+						H40.8z"/>
+				</g>
+			</mask>
+			<g id="Group" class="st3">
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

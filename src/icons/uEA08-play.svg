@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>play shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-Play-Small---focus" fill="#FFFFFF">
+            <path d="M19.272131,13.0695999 L1.75674015,23.7337398 C0.786519355,24.3244529 2.98624347e-12,23.8994894 2.98624347e-12,22.7833235 L2.98624347e-12,1.21671495 C2.98624347e-12,0.101101434 0.785977039,-0.324744638 1.75674015,0.266298619 L19.272131,10.9304386 C20.2423518,11.5211517 20.2428941,12.4785566 19.272131,13.0695999 Z" id="play-shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+header {
+    height: 60px;
+    width: 100%;
+    background: $neutral10;
+    padding: 14px 56px;
+    box-shadow: 0 0px 5px rgba($neutral01, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 9999;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+#search {
+    border-radius: 3px;
+    border: 1px solid rgba($neutral01, 0.2);
+    padding: 8px;
+    font-size: 14px;
+    transition: .2s ease-in-out;
+
+    &:focus {
+        border: 1px solid rgba($neutral01, 0.9);
+        outline: none;
+    }
+}

@@ -1,0 +1,50 @@
+
+html, body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 24px;
+	color: white;
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	background: $neutral10;
+	position: relative;
+
+	&.section {
+		overflow: visible;
+	}
+}
+
+a, a:visited, a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	margin: auto; 
+	animation: loadingSpinner 1s infinite linear;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	background: $neutral10;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+}
+
+@keyframes loadingSpinner {
+	to {
+	  transform: rotate(1turn); 
+	} 
+}
