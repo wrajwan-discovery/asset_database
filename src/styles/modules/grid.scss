@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     width: 100vw;
     padding: 2vw;
-    margin-top: 50px;
 }
 
 .grid-item {
@@ -16,6 +15,12 @@
     margin: 10px;
     width: calc(50% - 20px);
     border-radius: 3px;
+    // opacity: 0;
+
+    // &.show {
+    //     transition-delay: 5s;
+    //     opacity: 1;
+    // }
 
     @media screen and (min-width: $bp-xsmall) {
         width: calc(33% - 20px);
@@ -36,6 +41,32 @@
 
     @media screen and (min-width: $bp-xlarge) {
         width: calc(14.28% - 1vw);
+    }
+
+    .wide & {
+        width: calc(100% - 20px);
+
+        @media screen and (min-width: $bp-xsmall) {
+            width: calc(50% - 20px);
+        }
+    
+        @media screen and (min-width: $bp-small) {
+            width: calc(33% - 20px);
+        }
+    
+        @media screen and (min-width: $bp-medium) {
+            width: calc(25% - 20px);
+        }
+    
+        @media screen and (min-width: $bp-large) {
+            width: calc(20% - 1vw);
+            margin: .5vw;
+        }
+    
+        @media screen and (min-width: $bp-xlarge) {
+            width: calc(16.66% - 1vw);
+        } 
+        
     }
 
     img {
@@ -68,4 +99,9 @@
     letter-spacing: 1.1;
     line-height: 1.2;
     font-weight: 500;
+}
+
+@keyframes itemAppear {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }

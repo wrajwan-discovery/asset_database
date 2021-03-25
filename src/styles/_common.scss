@@ -22,7 +22,6 @@ body {
 
 a, a:visited, a:focus {
 	text-decoration: none;
-	color: inherit;
 }
 
 
@@ -47,4 +46,36 @@ a, a:visited, a:focus {
 	to {
 	  transform: rotate(1turn); 
 	} 
+}
+
+.toggle-wrapper {
+	border: 1px solid rgba($neutral01, 0.3);
+	display: flex;
+	margin-top: 50px;
+	width: fit-content;
+	border-radius: 6px;
+	margin: 0 2.5vw;
+}
+
+.toggle-item {
+	color: rgba($neutral01, 0.3);
+	font-size: 16px;
+	padding: 10px;
+	font-weight: 600;
+	cursor: pointer;
+	border-right: 1px solid rgba($neutral01, 0.3);
+	letter-spacing: 1.2;
+
+	&:last-child {
+		border-right: none;
+	}
+
+	&.active {
+		background: rgba($neutral01, 0.6);
+		color: #fafafa;
+	}
+}
+
+main {
+	margin-top: 50px;
 }

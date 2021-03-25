@@ -7,7 +7,8 @@
     "start": "babel-node src/js/server.js --presets es2015,stage-2",
     "dev": "gulp",
     "build": "gulp dist",
-    "postinstall": "gulp dist"
+    "postinstall": "gulp dist",
+    "type": "module"
   },
   "author": "",
   "license": "ISC",

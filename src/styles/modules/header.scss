@@ -2,7 +2,7 @@ header {
     height: 60px;
     width: 100%;
     background: $neutral10;
-    padding: 14px 56px;
+    padding: 14px 20px;
     box-shadow: 0 0px 5px rgba($neutral01, 0.2);
     display: flex;
     align-items: center;
@@ -10,10 +10,22 @@ header {
     position:fixed;
     z-index: 9999;
 
+    @media screen and (min-width: $bp-medium) {
+        padding: 14px 56px;
+    }
+
     img {
+        width: 40px;
+        object-fit: cover;
+        object-position: left center;
         height: 100%;
-        width: auto;
-        margin-right: 40px;
+        margin-right: 60px;
+
+        @media screen and (min-width: $bp-small) {
+            width: auto;
+            object-fit: unset;
+            object-position: unset;
+        }
     }
 }
 
@@ -31,11 +43,27 @@ header {
         border: 1px solid rgba($neutral01, 0.9);
         outline: none;
     }
+}
 
-    @media screen and (min-width: $bp-medium) {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        width: 400px;
+
+.left-nav-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-item {
+    color: rgba($neutral01, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+    transition: .2s ease-in-out;
+
+    &.active, &:hover {
+        color: rgba($neutral01, 0.7);
     }
 }
