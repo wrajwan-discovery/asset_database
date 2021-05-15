@@ -1,5 +1,3 @@
-var searchField = $('#search').val();
-
 $.getJSON("assets/data/data.json", function(items) {
     for(var item = 0; item < 28; item++) {
         $('#grid').append(
@@ -17,6 +15,7 @@ $.getJSON("assets/data/data.json", function(items) {
     var end = $('.grid-item:last-child').index();
     var itemPosition = end + 2;
     var itemNext = end + 30;
+    const searchField = $('#search').val();
     if (searchField === "") {
         if($(window).scrollTop()==($(document).height()-window.innerHeight)){
             $.getJSON("assets/data/data.json", function(items) {
@@ -52,6 +51,7 @@ $.getJSON("assets/data/data.json", function(items) {
   $('#search').keyup(delay(function() {
     $('#grid').empty();
       $('#grid').html('');
+      const searchField = $('#search').val();
       var expression = new RegExp(searchField, "i");
       $.getJSON('assets/data/data.json', function(items) {
         if (searchField === "") {
@@ -83,4 +83,3 @@ $.getJSON("assets/data/data.json", function(items) {
         }   
       });
   }, 200));
-  
