@@ -79,3 +79,20 @@ a, a:visited, a:focus {
 main {
 	margin-top: 50px;
 }
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $neutral01;
+	z-index: 9998;
+	opacity: 0;
+	backdrop-filter: blur(15px);
+	display: none;
+
+	.menu-open & {
+		opacity: 0.6;
+	}
+}
