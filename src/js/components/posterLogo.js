@@ -87,7 +87,7 @@ $.getJSON("assets/data/data.json", function(items) {
         } else {
             $.each(items, function(key, item){
             if (item.displayName.search(expression) != -1) {
-              if (item.posterWithLogoImage.length > 0  && item.listableAppNames === 'dplus_us') {
+              if (item.posterWithLogoImage.length > 0  && item.listableAppNames.includes('dplus_us') && item.contentSubsetId !== 'atve_us' && item.contentSubsetId !== 'dplus_ca') {
                   $('#grid').append(
                     "<a class='grid-item show' href='" + item.posterWithLogoImage + "' target='_blank' download>" +
                         "<img src='" + item.posterWithLogoImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
