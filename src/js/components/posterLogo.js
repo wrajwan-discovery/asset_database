@@ -7,6 +7,7 @@ $.getJSON("assets/data/data.json", function(items) {
                 "<div class='grid-item-meta-wrapper'>" +
                   "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
                   "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
+                  "<div class='grid-item-id'>" + items[item].internalId + "</div>" +
                 "</div>" +
           "</a>");
         } else {
@@ -33,6 +34,7 @@ $.getJSON("assets/data/data.json", function(items) {
                         "<div class='grid-item-meta-wrapper'>" +
                           "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
                           "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
+                          "<div class='grid-item-id'>" + items[item].internalId + "</div>" +
                         "</div>" +
                     "</a>");
                   } else {
@@ -73,6 +75,7 @@ $.getJSON("assets/data/data.json", function(items) {
                     "<div class='grid-item-meta-wrapper'>" +
                       "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
                       "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
+                      "<div class='grid-item-id'>" + items[item].internalId + "</div>" +
                     "</div>" +
               "</a>");
             } else {
@@ -84,13 +87,14 @@ $.getJSON("assets/data/data.json", function(items) {
         } else {
             $.each(items, function(key, item){
             if (item.displayName.search(expression) != -1) {
-              if (item.posterWithLogoImage.length > 0) {
+              if (item.posterWithLogoImage.length > 0  && item.listableAppNames === 'dplus_us') {
                   $('#grid').append(
                     "<a class='grid-item show' href='" + item.posterWithLogoImage + "' target='_blank' download>" +
                         "<img src='" + item.posterWithLogoImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
                         "<div class='grid-item-meta-wrapper'>" +
                           "<div class='grid-item-series-title'>" + item.displayName + "</div>" +
                           "<div class='grid-item-network'>" + item.channelName + "</div>" +
+                          "<div class='grid-item-id'>" + item.internalId + "</div>" +
                         "</div>" +
                     "</a>");
                 } else {

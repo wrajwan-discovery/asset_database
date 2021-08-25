@@ -7,6 +7,7 @@ $.getJSON("assets/data/data.json", function(items) {
               "<div class='grid-item-meta-wrapper'>" +
                 "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
                 "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
+                "<div class='grid-item-id'>" + items[item].internalId + "</div>" +
               "</div>" +
         "</a>");
       } else {
@@ -33,6 +34,7 @@ $.getJSON("assets/data/data.json", function(items) {
                       "<div class='grid-item-meta-wrapper'>" +
                         "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
                         "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
+                        "<div class='grid-item-id'>" + items[item].internalId + "</div>" +
                       "</div>" +
                   "</a>");
                 } else {
@@ -75,6 +77,7 @@ $.getJSON("assets/data/data.json", function(items) {
                     "<div class='grid-item-meta-wrapper'>" +
                       "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
                       "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
+                      "<div class='grid-item-id'>" + items[item].internalId + "</div>" +
                     "</div>" +
               "</a>");
             } else {
@@ -87,13 +90,14 @@ $.getJSON("assets/data/data.json", function(items) {
   
             $.each(items, function(key, item){
             if (item.displayName.search(expression) != -1) {
-              if (item.logoImage.length > 0) {
+              if (item.logoImage.length > 0 && item.listableAppNames === 'dplus_us') {
                   $('#grid').append(
                     "<a class='grid-item logo' href='" + item.logoImage + "' target='_blank' download>" +
                         "<img src='" + item.logoImage + '?w=800&f=PNG&p=true&q=60' + "' />" +
                         "<div class='grid-item-meta-wrapper'>" +
                           "<div class='grid-item-series-title'>" + item.displayName + "</div>" +
                           "<div class='grid-item-network'>" + item.channelName + "</div>" +
+                          "<div class='grid-item-id'>" + item.internalId + "</div>" +
                         "</div>" +
                     "</a>");
                   } else {
