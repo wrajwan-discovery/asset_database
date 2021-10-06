@@ -90,7 +90,7 @@ $.getJSON("assets/data/data.json", function(items) {
   
             $.each(items, function(key, item){
             if (item.displayName.search(expression) != -1) {
-              if (item.defaultImage.length > 0 && item.contentSubsetId === 'go') {
+              if (item.defaultImage.length > 0) {
                   $('#grid').append(
                     "<a class='grid-item show' href='" + item.defaultImage + "' target='_blank' download>" +
                         "<img src='" + item.defaultImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
