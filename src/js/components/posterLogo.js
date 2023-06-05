@@ -11,7 +11,29 @@ $.getJSON("assets/data/data.json", function (items) {
           "' />" +
           "<div class='grid-item-meta-wrapper'>" +
           "<div class='grid-item-series-title'>" +
-          items[item].displayName +
+          items[item].name +
+          "</div>" +
+          "<div class='grid-item-network'>" +
+          items[item].channelName +
+          "</div>" +
+          "<div class='grid-item-id'>" +
+          items[item].internalId +
+          "</div>" +
+          "</div>" +
+          "</a>"
+      );
+    } else if (item.posterWithLogoImage.length === 0 && item.posterImage.length > 0) {
+      $("#grid").append(
+        "<a class='grid-item show' href='" +
+          items[item].posterImage +
+          "' target='_blank' download>" +
+          "<img src='" +
+          items[item].posterImage +
+          "?w=800&f=JPG&p=true&q=60" +
+          "' />" +
+          "<div class='grid-item-meta-wrapper'>" +
+          "<div class='grid-item-series-title'>" +
+          items[item].name +
           "</div>" +
           "<div class='grid-item-network'>" +
           items[item].channelName +
@@ -48,7 +70,29 @@ $(window).scroll(function () {
                 "' />" +
                 "<div class='grid-item-meta-wrapper'>" +
                 "<div class='grid-item-series-title'>" +
-                items[item].displayName +
+                items[item].name +
+                "</div>" +
+                "<div class='grid-item-network'>" +
+                items[item].channelName +
+                "</div>" +
+                "<div class='grid-item-id'>" +
+                items[item].internalId +
+                "</div>" +
+                "</div>" +
+                "</a>"
+            );
+          } else if (item.posterWithLogoImage.length === 0 && item.posterImage.length > 0) {
+            $("#grid").append(
+              "<a class='grid-item show' href='" +
+                items[item].posterImage +
+                "' target='_blank' download>" +
+                "<img src='" +
+                items[item].posterImage +
+                "?w=800&f=JPG&p=true&q=60" +
+                "' />" +
+                "<div class='grid-item-meta-wrapper'>" +
+                "<div class='grid-item-series-title'>" +
+                items[item].name +
                 "</div>" +
                 "<div class='grid-item-network'>" +
                 items[item].channelName +
@@ -93,27 +137,49 @@ $("#search").keyup(
     $.getJSON("assets/data/data.json", function (items) {
       if (searchField === "") {
         for (var item = 0; item < 28; item++) {
-          if (items[item].posterWithLogoImage.length > 0) {
+          if (item.posterWithLogoImage.length > 0) {
             $("#grid").append(
               "<a class='grid-item show' href='" +
-                items[item].posterWithLogoImage +
+                item.posterWithLogoImage +
                 "' target='_blank' download>" +
                 "<img src='" +
-                items[item].posterWithLogoImage +
+                item.posterWithLogoImage +
                 "?w=800&f=JPG&p=true&q=60" +
                 "' />" +
                 "<div class='grid-item-meta-wrapper'>" +
                 "<div class='grid-item-series-title'>" +
-                items[item].displayName +
+                item.name +
                 "</div>" +
                 "<div class='grid-item-network'>" +
-                items[item].channelName +
+                item.channelName +
                 "</div>" +
                 "<div class='grid-item-id'>" +
-                items[item].internalId +
+                item.internalId +
                 "</div>" +
                 "</div>" +
                 "</a>"
+            );
+          } else if (item.posterWithLogoImage.length === 0 && item.posterImage.length > 0) {
+            $("#grid").append(
+              "<a class='grid-item show' href='" +
+                item.posterImage +
+                "' target='_blank' download>" +
+                "<img src='" +
+                item.posterImage +
+                "?w=800&f=JPG&p=true&q=60" +
+                "' />" +
+                "<div class='grid-item-meta-wrapper'>" +
+                "<div class='grid-item-series-title'>" +
+                item.name +
+                "</div>" +
+                "<div class='grid-item-network'>" +
+                item.channelName +
+                "</div>" +
+                "<div class='grid-item-id'>" +
+                item.internalId +
+                "</div>" +
+                "</div>" +
+              "</a>"
             );
           } else {
             $("#grid").append(
@@ -123,7 +189,7 @@ $("#search").keyup(
         }
       } else {
         $.each(items, function (key, item) {
-          if (item.displayName.search(expression) != -1) {
+          if (item.name.search(expression) != -1) {
             if (
               item.posterWithLogoImage.length > 0
             ) {
@@ -137,7 +203,7 @@ $("#search").keyup(
                   "' />" +
                   "<div class='grid-item-meta-wrapper'>" +
                   "<div class='grid-item-series-title'>" +
-                  item.displayName +
+                  item.name +
                   "</div>" +
                   "<div class='grid-item-network'>" +
                   item.channelName +

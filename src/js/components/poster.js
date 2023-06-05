@@ -4,7 +4,7 @@ $.getJSON("assets/data/data.json", function(items) {
         "<a class='grid-item show' href='" + items[item].coverArtworkImage + "' target='_blank' download>" +
               "<img src='" + items[item].coverArtworkImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
               "<div class='grid-item-meta-wrapper'>" +
-                "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
+                "<div class='grid-item-series-title'>" + items[item].name + "</div>" +
                 "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
               "</div>" +
         "</a>");
@@ -24,7 +24,7 @@ $.getJSON("assets/data/data.json", function(items) {
                     "<a class='grid-item show' href='" + items[item].coverArtworkImage + "' target='_blank' download>" +
                       "<img src='" + items[item].coverArtworkImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
                       "<div class='grid-item-meta-wrapper'>" +
-                        "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
+                        "<div class='grid-item-series-title'>" + items[item].name + "</div>" +
                         "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
                       "</div>" +
                   "</a>");
@@ -60,7 +60,7 @@ $.getJSON("assets/data/data.json", function(items) {
           "<a class='grid-item show' href='" + items[item].coverArtworkImage + "' target='_blank' download>" +
                 "<img src='" + items[item].coverArtworkImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
                 "<div class='grid-item-meta-wrapper'>" +
-                  "<div class='grid-item-series-title'>" + items[item].displayName + "</div>" +
+                  "<div class='grid-item-series-title'>" + items[item].name + "</div>" +
                   "<div class='grid-item-network'>" + items[item].channelName + "</div>" +
                 "</div>" +
           "</a>");
@@ -68,13 +68,13 @@ $.getJSON("assets/data/data.json", function(items) {
         } else {
   
             $.each(items, function(key, item){
-            if (item.displayName.search(expression) != -1)
+            if (item.name.search(expression) != -1)
               {
                   $('#grid').append(
                     "<a class='grid-item show' href='" + item.coverArtworkImage + "' target='_blank' download>" +
                         "<img src='" + item.coverArtworkImage + '?w=800&f=JPG&p=true&q=60' + "' />" +
                         "<div class='grid-item-meta-wrapper'>" +
-                          "<div class='grid-item-series-title'>" + item.displayName + "</div>" +
+                          "<div class='grid-item-series-title'>" + item.name + "</div>" +
                           "<div class='grid-item-network'>" + item.channelName + "</div>" +
                         "</div>" +
                     "</a>");
